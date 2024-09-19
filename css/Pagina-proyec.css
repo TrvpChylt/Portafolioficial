@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #192642;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*header de la pagina web*/
+.back{
+    padding: 32px 0;
+    background-color: #182239;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+    transition: 0.2s;
+    border-radius: 50px;
+    margin: 0 5px;
+}
+.menu .navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#menu{
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+    color: whi;
+    
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 48px 0;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #182239;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+}
+
+/*hola bienvenidos*/
+
+.contenedor-card{
+    display: flex;
+    justify-content: center;  
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    background: linear-gradient(#182239, #394d77);
+}
+.card{
+    width: 380px;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*Proyecto1*/
+
+.container-proyec{
+    background: #394d77;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    gap:100px;
+    width: 100%;
+}
+.proyec1{
+    width: 380px;
+    overflow: hidden;
+    text-align: center;
+}
+@media(max-width:991px){
+    .proyec1{
+        text-align: center;
+    }
+}
+.img-proyec1{
+    width: 600px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px black;
+    overflow: hidden;
+}
+.img-proyec1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Pie de la pafina web*/
+
+
+footer{
+    background-color: #182239;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+}
+.contenedor2{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.redes{
+    background-color: #182239;
+}
+.redes-lista li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.contenedor3{
+    padding-bottom: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    color: white;
+    text-align: center;
+    background-color: #182239;
+}
+
+
+
+
